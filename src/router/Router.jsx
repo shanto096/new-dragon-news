@@ -46,7 +46,7 @@ const router = createBrowserRouter([
         {
           path:':id',
           element:<Category></Category>,
-          loader: ({params})=>fetch(`http://localhost:5000/category/${params.id}`)
+          loader: ({params})=>fetch(`https://dragon-news-server-shanto096.vercel.app/category/${params.id}`)
         }
 
       ]
@@ -60,7 +60,7 @@ const router = createBrowserRouter([
         {
           path:':id',
           element:<PrivateRouteProvider><News></News></PrivateRouteProvider>,
-          loader:({params})=> fetch(`http://localhost:5000/news/${params.id}`)
+          loader:({params})=> fetch(`https://dragon-news-server-shanto096.vercel.app/news/${params.id}`)
         }
       ]
     }

@@ -6,7 +6,7 @@ const LeftComponent = () =>  {
     const [categories, setCategories] = useState([])
 
     useEffect(()=>{
-        fetch("http://localhost:5000/category")
+        fetch("https://dragon-news-server-shanto096.vercel.app/category")
         .then(res => res.json())
         .then(data => setCategories(data))
     }, [])
